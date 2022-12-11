@@ -64,9 +64,9 @@ public abstract class Car {
     }
 
     public int getNumberOfPassengersCanBeTransferred() {
-        if (canPassengersBeTransferred()) return numberOfPassengers;
-        else return 0;
-//        return canPassengersBeTransferred() ? numberOfPassengers : 0;
+//        if (canPassengersBeTransferred()) return numberOfPassengers;
+//        else return 0;
+        return canPassengersBeTransferred() ? numberOfPassengers : 0;
     }
 
     public boolean isDriverAvailable() {
